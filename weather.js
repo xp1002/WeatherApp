@@ -15,7 +15,7 @@ function callbackFunction(data) {
 	document.getElementById("date").innerHTML = monthNames[time.getMonth()] + ' ' + time.toLocaleString(locale,{day:'numeric'}) + ', ' + time.toLocaleString(locale,{year:'numeric'});
 
 	var text = ["Partly Sunny","Rain","Cloudy","Sunny","Mostly Cloudy","Partly Cloudy","Mostly Sunny","Breezy","Windy","Thunder","Snow","Clear"];
-	var pic = ["../WeatherApp/part-sun.png","../WeatherApp/rain.png","../WeatherApp/cloudy.png", "../WeatherApp/sunny.png","../WeatherApp/cloudy.png","../WeatherApp/part-sun.png","../WeatherApp/snow.png","../WeatherApp/snow.png","../WeatherApp/snow.png","../WeatherApp/thunder.png","../WeatherApp/snow.png","../WeatherApp/snow.png"];
+	var pic = ["../WeatherApp/images/part-sun.png","../WeatherApp/images/rain.png","../WeatherApp/images/cloudy.png", "../WeatherApp/images/sunny.png","../WeatherApp/images/cloudy.png","../WeatherApp/images/part-sun.png","../WeatherApp/images/snow.png","../WeatherApp/images/snow.png","../WeatherApp/images/snow.png","../WeatherApp/images/thunder.png","../WeatherApp/images/snow.png","../WeatherApp/images/snow.png"];
 	document.getElementById("pic").src = pic[text.indexOf(cityinfo.item.condition.text)];
 
 	document.getElementById("city").innerHTML = cityinfo.location.city + ", " + cityinfo.location.region;
